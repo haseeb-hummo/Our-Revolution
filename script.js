@@ -78,7 +78,7 @@ centerH1.addEventListener("mousemove", throttling((event) => {
     tl1.to(img, {
         y: 0,
         ease: Expo.easeOut,
-        duration : 0.8,
+        // duration : 0.5,
     }).to(img, {
         y: "100%",
         duration : 0.4,

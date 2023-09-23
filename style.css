@@ -1,0 +1,75 @@
+/* Define custom fonts */
+@font-face {
+  font-family: PPMigra;
+  src: url(./PPMigra-Regular.fb0ee287.ttf);
+}
+
+@font-face {
+  font-family: SharpGrotesk;
+  src: url(./SharpGrotesk-Bold.164b198a.ttf);
+}
+
+/* Reset default styles and set the default font-family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PPMigra;
+}
+
+/* Set full height and width for HTML and body */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Define styles for the homePage container */
+.homePage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #E7E4E5;
+
+  /* Center the content vertically and horizontally */
+  & .centerH1 {
+    position: relative;
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Styles for the heading element */
+    & h1 {
+      text-align: center;
+      font-size: 8vw;
+      font-weight: 400;
+      line-height: 1;
+
+      /* Special styles for specific heading elements */
+      &:nth-child(1) {
+        margin-top: 5vw;
+      }
+      &:nth-child(3) {
+        font-family: SharpGrotesk;
+      }
+    }
+  }
+}
+
+/* Styles for the image container */
+.imgs {
+  position: absolute;
+  height: 250px;
+  width: 180px;
+  overflow: hidden;
+  transform-origin: bottom right;
+
+  /* Styles for the image inside the container */
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(100%);
+  }
+}
